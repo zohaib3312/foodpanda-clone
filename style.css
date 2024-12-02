@@ -1,0 +1,665 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  
+}
+
+
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 80px;
+  background-color: white;
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0; /* Aligns it to the top of the viewport */
+  width: 100%; /* Stretches the navbar to full width */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Gray box shadow at the bottom */
+  z-index: 1000; /* Ensures it stays above other elements */
+  
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0 10px;
+}
+
+.btn {
+  border: none;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all;
+
+}
+
+
+.login-btn {
+  background-color: transparent;
+  color: #333;
+  font-weight: bold;
+  border: 1px solid black;
+}
+.login-btn:hover{
+padding: 10px 22px;
+transition: 0s ease-in-out;
+background-color: rgb(244, 244, 244);
+}
+
+
+.signup-btn {
+  background-color: #ff007a;
+  color: white;
+  font-weight: bold;
+}
+
+.signup-btn:hover{
+  padding: 10px 22px;
+transition: 0s ease-in-out;
+}
+
+
+.language {
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all;
+  
+}
+
+.cart {
+  font-size: 1.2rem;
+}
+
+
+/* Styling for the logo and title container */
+.logo-title {
+  display: flex; /* Use Flexbox to align items horizontally */
+  align-items: center; /* Vertically align logo and title */
+  gap: 5px; /* Add some space between the logo and title */
+}
+
+/* Logo styling */
+.logo {
+  height: 40px; /* Set the height of the logo */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Title styling */
+.title {
+  font-size: 1.5rem; /* Adjust the font size of the title */
+  font-weight: bold; /* Make the title bold */
+  color:#ff2b85; /* Set the title color */
+}
+
+@media screen and (max-width: 700px) {
+  .language ,.btn {
+    display: none;
+  }
+}
+
+
+/* another code */
+
+.herosection {
+  height: 608px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 64px;
+  gap: 30px;
+  background-color: #F0F2F2;
+}
+
+.herotext {
+  width: 50%;
+  margin: 32px 0px;
+}
+
+/* Container styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 600px; /* Adjust width as needed */
+  margin: 20px auto; /* Center horizontally */
+}
+
+/* Input field styling */
+.search-input {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 15px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Locate button styling */
+.locate-btn {
+  background-color: #fff;
+  border: 1px solid #ddd;
+ color: #d32e5e;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+.locate-btn span {
+  margin-left: 5px; /* Space between icon and text */
+}
+
+/* Find food button styling */
+.find-btn {
+  background-color: #d32e5e;
+  color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+.find-btn:hover {
+  background-color: #b0204c;
+}
+
+
+
+.heroimg {
+
+  width: 100%;
+  height: 600px;
+}
+
+.heroimg img{
+  height: 600px;
+  width: 130%;
+  position: relative;
+  left: 130px;
+}
+
+.textsection {
+  height: 74px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 5%;
+  font-size: 25px;
+}
+
+.imgsection {
+  padding-top: 30px;
+  height: 452px;
+  background-image: url('https://images.deliveryhero.io/image/foodpanda/home-vendor-pk.jpg?width=960&height=614.4');
+  background-size: 1349px 600px;
+  background-repeat: no-repeat;
+  background-color: #e02956;
+}
+
+.shopsection {
+  height: 344px;
+  width: 636px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  margin: -120px 15px 0px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.shopsection #getstarted {
+  background-color: #E21870;
+  height: 50px;
+  width: 110px;
+  border-radius: 8px;
+  border: 1px solid #00000000;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#listing {
+  font-size: 24px;
+  font-weight: 600px;
+}
+
+
+.citytext {
+  height: 74px;
+  padding: 0px 32px;
+  margin: 32px 0px;
+}
+
+.citytext h2 {
+  font-size: 32px;
+}
+
+.container {
+  width: 100%;
+  padding: 30px;
+}
+
+.city {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.citytwo {
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.citythree {
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.cityfour {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.cityfive {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 15px;
+
+}
+
+.citysix {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.cityseven {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.cityeight {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin:20px;
+  padding: 10px;
+}
+
+#eight{
+  margin-left: 50px;
+}
+
+.islamabad {
+  height: 242px;
+  width: 22%;
+  background-image: url('https://ittehad.com.pk/wp-content/uploads/2020/09/mounment-min.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.islamabadtext {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.karachi {
+  height: 242px;
+  width: 22%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0gi4mQf081if5Lbe8-KNprQ-pYdjAOI5YQ&s');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.karachitext {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.lahore {
+  height: 242px;
+  width: 22%;
+  background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/6b/b8/60/lahore.jpg?w=600&h=-1&s=1');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.lahoretext {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.faisalabad {
+  height: 242px;
+  width: 22%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQElqw80ZMPZQzDulQoWFhrJos6GpjGVbchmQ&s');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.faisalabadtext {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.rawalpindi {
+  height: 242px;
+  width: 22%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6JIt_-JUdw-fvCFsskrmeKZO-TMPKmbwO0A&s');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.rawalpinditext {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.abbottabad {
+  height: 242px;
+  width: 22%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4XN3qZLDsCfa5NFTF9r5PT_BhZhQAd-nt0A&s');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.abbottabadtext {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.bahawalpur {
+  height: 242px;
+  width: 22%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Bl_1RTReu-pZqr37GfnXcqFz4bRAhnNffg&s');
+  background-size: 296px 242px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.bahawalpurtext {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;
+
+}
+
+.deraghazikhan {
+  height: 242px;
+  width: 22%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9gSZyW_jbmF-LGnZxYst1t-M246yZi9Hmog&s');
+  background-size: 296px 242px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.deraghazikhantext {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 140px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.gujranawala {
+  height: 242px;
+  width: 22%;
+  background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/1b/fb/20/lahore-fort.jpg?w=300&h=300&s=1');
+  background-size: 296px 242px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.gujranawalatext {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 140px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.gujrat{
+  height: 242px;
+  width: 22%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqaxdVKNR21L9gj_7zs3xynr6V6ijpE7rF5g&s');
+  background-size: 296px 242px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.gujrattext{
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 140px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;  
+}
+
+.hyderabad{
+  height: 242px;
+  width: 22%;
+  background-image: url('https://www.vouch365.com/blog/wp-content/uploads/2024/04/featured-image-2.jpg');
+  background-size: 296px 242px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  border-radius: 16px;   
+}
+
+.hyderabadtext{
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 140px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;   
+}
+
+.jhelum{
+  height: 242px;
+  width: 22%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7CaVKK8VQwkfglo-uPr4vdtLKxQhAzCllng&s');
+  background-size: 296px 242px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  border-radius: 16px;      
+}
+
+.jhelumtext{
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 140px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;   
+}
+
+.kamoke{
+  height: 242px;
+  width: 22%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnNVVp7HDDwTe5ce93eYUDguHJ_Io5hOai5Q&s');
+  background-size: 296px 242px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.kamoketext{
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
+  height: 30px;
+  width: 140px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.main-phone-container{
+  width:100%;
+  height: 800px;
+}
+
+.main-phone-container h1{
+  padding-left: 58px;
+}
+
+
+.ping-bg{
+  background-color: #ff2b85;
+  width: 92%;
+  margin: auto;
+  height: 400px;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.ping-bg h2{
+  padding-top: 30px;
+  color: white;
+}
+
+
+.bar-sec{
+  /* background-color: #ddd; */
+  width: 50%;
+  height: 100px;
+  display: flex;
+  
+}
+
+
+.barcode{
+  width: 40%;
+  height: 100%;
+  /* background-color: aqua; */
+}
+.barcode img{
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+}
